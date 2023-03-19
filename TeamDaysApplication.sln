@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B00DBF12-D9F4-4C37-BD80-03698E3594AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamDaysApplication.App", "TeamDaysApplication.App\TeamDaysApplication.App.csproj", "{02176834-FF09-44E7-BB8D-1846F671ADF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamDaysApplication.Domain", "TeamDaysApplication.Domain\TeamDaysApplication.Domain.csproj", "{4B1F3076-F700-458B-BBB5-AD37099992FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamDaysApplication.Core", "TeamDaysApplication.Core\TeamDaysApplication.Core.csproj", "{AED8B42D-4A91-489F-B94B-91540F6B062E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamDaysApplication.Infrastructure", "TeamDaysApplication.Infrastructure\TeamDaysApplication.Infrastructure.csproj", "{ECCAF180-5E34-4E88-927D-9E7A28BC7878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamDaysApplication.Contracts", "TeamDaysApplication.Contracts\TeamDaysApplication.Contracts.csproj", "{7313948A-E97C-4D91-9BFC-168CFC2ADA4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02176834-FF09-44E7-BB8D-1846F671ADF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02176834-FF09-44E7-BB8D-1846F671ADF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02176834-FF09-44E7-BB8D-1846F671ADF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02176834-FF09-44E7-BB8D-1846F671ADF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B1F3076-F700-458B-BBB5-AD37099992FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B1F3076-F700-458B-BBB5-AD37099992FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B1F3076-F700-458B-BBB5-AD37099992FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B1F3076-F700-458B-BBB5-AD37099992FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED8B42D-4A91-489F-B94B-91540F6B062E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED8B42D-4A91-489F-B94B-91540F6B062E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED8B42D-4A91-489F-B94B-91540F6B062E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED8B42D-4A91-489F-B94B-91540F6B062E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECCAF180-5E34-4E88-927D-9E7A28BC7878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCAF180-5E34-4E88-927D-9E7A28BC7878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCAF180-5E34-4E88-927D-9E7A28BC7878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCAF180-5E34-4E88-927D-9E7A28BC7878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7313948A-E97C-4D91-9BFC-168CFC2ADA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7313948A-E97C-4D91-9BFC-168CFC2ADA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7313948A-E97C-4D91-9BFC-168CFC2ADA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7313948A-E97C-4D91-9BFC-168CFC2ADA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02176834-FF09-44E7-BB8D-1846F671ADF5} = {B00DBF12-D9F4-4C37-BD80-03698E3594AD}
+		{4B1F3076-F700-458B-BBB5-AD37099992FE} = {B00DBF12-D9F4-4C37-BD80-03698E3594AD}
+		{AED8B42D-4A91-489F-B94B-91540F6B062E} = {B00DBF12-D9F4-4C37-BD80-03698E3594AD}
+		{ECCAF180-5E34-4E88-927D-9E7A28BC7878} = {B00DBF12-D9F4-4C37-BD80-03698E3594AD}
+		{7313948A-E97C-4D91-9BFC-168CFC2ADA4E} = {B00DBF12-D9F4-4C37-BD80-03698E3594AD}
+	EndGlobalSection
+EndGlobal
