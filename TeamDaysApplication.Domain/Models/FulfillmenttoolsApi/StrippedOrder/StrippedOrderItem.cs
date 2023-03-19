@@ -1,10 +1,10 @@
 namespace TeamDaysApplication.Domain.Models.FulfillmenttoolsApi.StrippedOrder;
 
 public record StrippedOrderItem(
-    DateTimeOffset CreatedAt, 
-    DateTimeOffset LastModifiedAt,
+    string CreatedAt, 
+    string LastModifiedAt,
     int Version,
     string Id,
-    DateTimeOffset OrderDate, 
+    string OrderDate, 
     List<StrippedOrderLineItem> OrderLineItems, 
     string OrderStatus);
