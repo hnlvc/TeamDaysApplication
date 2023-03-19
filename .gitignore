@@ -3,5 +3,5 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
-/TeamDaysApplication.App/appsettings.json
-/TeamDaysApplication.App/appsettings.Development.json
+TeamDaysApplication.App/appsettings.json
+TeamDaysApplication.App/appsettings.Development.json
