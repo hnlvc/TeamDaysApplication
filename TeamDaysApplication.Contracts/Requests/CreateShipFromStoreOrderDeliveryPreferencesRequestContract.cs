@@ -1,0 +1,3 @@
+namespace TeamDaysApplication.Contracts.Requests;
+
+public record CreateShipFromStoreOrderDeliveryPreferencesRequestContract(List<CreateShipFromStoreOrderShippingRequestContract> Shipping);

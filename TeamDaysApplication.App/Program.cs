@@ -1,5 +1,7 @@
 using System.Reflection;
+using TeamDaysApplication.Contracts.Requests;
 using TeamDaysApplication.Domain.Models.FulfillmenttoolsApi;
+using TeamDaysApplication.Domain.Models.FulfillmenttoolsApi.CreateOrder;
 using TeamDaysApplication.Infrastructure.HttpClients;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,11 +14,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add MediatR
-/*builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
-builder.Services.AddScoped<IRequestHandler<GetOrderByOrderIdQuery>>();*/
-
 builder.Services.AddMediatR(static config => config.RegisterServicesFromAssembly(Assembly.Load("TeamDaysApplication.Core")));
 
+// Add AutoMapper
+builder.Services.AddAutoMapper(config =>
+{
+    config.CreateMap<CreateShipFromStoreOrderRequestContract, CreateShipFromStoreOrderRequestModel>();
+});
 
 // Add fulfillmenttools API Creds
 var fulfillmenttoolsCreds =

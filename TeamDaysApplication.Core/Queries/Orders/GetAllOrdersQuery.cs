@@ -3,4 +3,4 @@ using TeamDaysApplication.Domain.Models.FulfillmenttoolsApi.StrippedOrder;
 
 namespace TeamDaysApplication.Core.Queries.Orders;
 
-public record GetOrderByOrderIdQuery() : IRequest<StrippedOrdersResponse?>;
+public record GetAllOrdersQuery() : IRequest<StrippedOrdersResponse?>;
