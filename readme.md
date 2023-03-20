@@ -1,7 +1,9 @@
-# Software Engineering in PS Application 
-Hey, thanks a lot for taking the time reviewing this code. To get this application up and running, 
-your `appsettings.json` should contain a section for the fulfillmenttools Api: 
+# Application as a Software Engineer in Professional Service
+Hey, thanks a lot for taking the time reviewing this code. 
 
+## Build and run the application
+You might have seen that, `TeamDaysApplication.App` does not contain an `appsettings.json` file. 
+You need to add that and besides the auto-generated content, the file should contain a section for the fulfillmenttools API:
 ```json
     {
   "fulfillmenttoolsCreds": {
@@ -12,26 +14,18 @@ your `appsettings.json` should contain a section for the fulfillmenttools Api:
   }
 }
 ```
-
 ## Questions that might come up
 **Q: Why is this an API, not a function?**
 
-**A:** Good question. I know Google if offering a .NET SDK and gives examples on how to write a function in .NET. 
-I decided using an API for this UseCase as I think it's more important getting an overview of my working style. 
-In a productive environment, I would prefer using an event triggered function to import orders into the fulfillmenttools
-platform. Furthermore, I don't have an testing environment on GCP. 
+**A:** Good question, I know Google if offering a .NET SDK and gives examples on how to write a function in .NET. I am more experienced in testing
+APIs locally, so this was the quickest solution presenting my working style. In productive environments I love using event-triggered Cloud functions such
+as Google Functions or ServiceBus-triggered Azure Functions
 
-**Q: Why did you use .NET instead of TypeScript?**
+**Q: Why .NET?**
 
-**A:** My skills in .NET are way higher than my TypeScript skills which are nearly to zero, currently.
+**A:** The .NET 6 and 7 is the eco-system I am most experienced in. 
 
 **Q: Why did you store the API credentials in the appsettings?**
 
-**A:** As explained above, my goal was showing my engineering approach real quick. In production, 
-I would have used GCP Secret Manager or Azure Key Vaults. 
-
-
-## Issues I encountered
-- This was the first full application I set up, took a bit figuring everything out
-  - Registering MediatR in .NET 7 changed a bit
-- Always getting `400 Bad Request` when sending requests to the fft API
+**A:** I don't have an testing environment on GCP or Azure, so Secret Managers and Key Vaults were no option I was able to use. So this
+was the quickest way to get that app running.
