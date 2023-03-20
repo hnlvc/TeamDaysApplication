@@ -1,3 +1,6 @@
 namespace TeamDaysApplication.Domain.Models.FulfillmenttoolsApi.CreateOrder;
 
-public record DeliveryPreferences(List<Shipping> Shipping);
+public class DeliveryPreferences
+{
+    public List<Shipping> Shipping { get; set; } = default!;
+}

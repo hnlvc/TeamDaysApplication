@@ -19,7 +19,14 @@ builder.Services.AddMediatR(static config => config.RegisterServicesFromAssembly
 // Add AutoMapper
 builder.Services.AddAutoMapper(config =>
 {
+    config.CreateMap<CreateShipFromStoreOrderConsumerAddressRequestContract, ConsumerAddress>();
+    config.CreateMap<CreateShipFromStoreOrderConsumerRequestContract, CreateOrderConsumerModel>();
+    config.CreateMap<CreateShipFromStoreOrderLineArticleRequestContract, OrderLineArticle>();
+    config.CreateMap<CreateShipFromStoreOrderLineItemRequestContract, OrderLineItem>();
+    config.CreateMap<CreateShipFromStoreOrderShippingRequestContract, Shipping>();
+    config.CreateMap<CreateShipFromStoreOrderDeliveryPreferencesRequestContract, DeliveryPreferences>();
     config.CreateMap<CreateShipFromStoreOrderRequestContract, CreateShipFromStoreOrderRequestModel>();
+    
 });
 
 // Add fulfillmenttools API Creds

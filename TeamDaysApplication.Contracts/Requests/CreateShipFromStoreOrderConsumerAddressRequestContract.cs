@@ -1,13 +1,24 @@
 namespace TeamDaysApplication.Contracts.Requests;
 
-public record CreateShipFromStoreOrderConsumerAddressRequestContract(
-    string? Email,
-    string? Salutation,
-    string? FirstName,
-    string? LastName,
-    string? CompanyName,
-    string Street,
-    string HouseNumber,
-    string PostalCode,
-    string City,
-    string Country);
+public class CreateShipFromStoreOrderConsumerAddressRequestContract
+{
+    public string? Email { get; set; }
+    
+    public string? Salutation { get; set; }
+    
+    public string? FirstName { get; set; }
+    
+    public string? LastName { get; set; }
+    
+    public string? CompanyName { get; set; }
+
+    public string Street { get; set; } = default!;
+
+    public string HouseNumber { get; set; } = default!;
+
+    public string PostalCode { get; set; } = default!;
+
+    public string City { get; set; } = default!;
+
+    public string Country { get; set; } = default!;
+}

@@ -1,3 +1,8 @@
 namespace TeamDaysApplication.Domain.Models.FulfillmenttoolsApi.CreateOrder;
 
-public record CreateOrderConsumerModel(List<ConsumerAddress> Addresses, string? Email);
+public class CreateOrderConsumerModel
+{
+    public List<ConsumerAddress> Addresses { get; set; } = default!;
+
+    public string? Email { get; set; }
+}
