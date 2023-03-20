@@ -36,6 +36,6 @@ public class OrderController : ControllerBase
         var command = new CreateShipFromStoreOrderCommand(request);
         await _mediator.Send(command, cancellationToken);
 
-        return Ok();
+        return Accepted();
     }
 }

@@ -13,5 +13,5 @@ public class CreateShipFromStoreOrderShippingRequestContract
     /// <summary>
     /// Preferred service level for this ship from store order.
     /// </summary>
-    public string ServiceLevel { get; set; } = "DELIVERY";
+    public string ServiceLevel { get; set; } = string.Empty;
 }
