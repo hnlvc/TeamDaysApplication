@@ -3,30 +3,20 @@ namespace TeamDaysApplication.Contracts.Requests;
 public class CreateShipFromStoreOrderConsumerAddressRequestContract
 {
     /// <summary>
-    /// Optional value for customer's email address
+    /// Value for the coorect salutation
     /// </summary>
-    public string? Email { get; set; }
+    public string Salutation { get; set; } = string.Empty;
     
     /// <summary>
-    /// Optional value for correct salutation.
+    /// First name of our customer
     /// </summary>
-    public string? Salutation { get; set; }
+    public string FirstName { get; set; } = string.Empty;
     
     /// <summary>
-    /// Optional value for customer's first name.
+    /// Last name of our customer
     /// </summary>
-    public string? FirstName { get; set; }
+    public string LastName { get; set; } = string.Empty;
     
-    /// <summary>
-    /// Optional value for costumer's last name.
-    /// </summary>
-    public string? LastName { get; set; }
-    
-    /// <summary>
-    /// Optional value for name of customer's company.
-    /// </summary>
-    public string? CompanyName { get; set; }
-
     /// <summary>
     /// Street to shop to. 
     /// </summary>
