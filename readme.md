@@ -34,4 +34,4 @@ I would have used GCP Secret Manager or Azure Key Vaults.
 ## Issues I encountered
 - This was the first full application I set up, took a bit figuring everything out
   - Registering MediatR in .NET 7 changed a bit
-- Handling the DateTime format from your API
+- Always getting `400 Bad Request` when sending requests to the fft API

@@ -35,11 +35,11 @@ public class FulfillmenttoolsTeamDaysApiClient
     {
         HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", jwt);
 
-        var response = await HttpClient.PostAsJsonAsync("api/orders", request, cancellationToken);
+        var response = await HttpClient.PostAsJsonAsync("api/orders", request, WebOptions, cancellationToken);
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(
-                $"Error while creating order with status code {response.StatusCode} and message {response.Content}");
+                $"Error while creating order with status code {response.StatusCode} and message {response.ReasonPhrase}");
         }
     }
 }

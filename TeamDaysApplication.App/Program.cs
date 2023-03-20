@@ -26,7 +26,6 @@ builder.Services.AddAutoMapper(config =>
     config.CreateMap<CreateShipFromStoreOrderShippingRequestContract, Shipping>();
     config.CreateMap<CreateShipFromStoreOrderDeliveryPreferencesRequestContract, DeliveryPreferences>();
     config.CreateMap<CreateShipFromStoreOrderRequestContract, CreateShipFromStoreOrderRequestModel>();
-    
 });
 
 // Add fulfillmenttools API Creds

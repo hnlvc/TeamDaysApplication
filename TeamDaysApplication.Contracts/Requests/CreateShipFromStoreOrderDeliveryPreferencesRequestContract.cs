@@ -1,3 +1,6 @@
 namespace TeamDaysApplication.Contracts.Requests;
 
-public record CreateShipFromStoreOrderDeliveryPreferencesRequestContract(List<CreateShipFromStoreOrderShippingRequestContract> Shipping);
+public class CreateShipFromStoreOrderDeliveryPreferencesRequestContract
+{
+    public List<CreateShipFromStoreOrderShippingRequestContract> Shipping { get; set; } = default!;
+}

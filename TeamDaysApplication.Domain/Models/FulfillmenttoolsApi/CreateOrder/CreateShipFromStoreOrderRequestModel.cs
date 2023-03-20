@@ -12,5 +12,5 @@ public class CreateShipFromStoreOrderRequestModel
 
     public List<OrderLineItem> OrderLineItems { get; set; } = default!;
 
-    private DeliveryPreferences DeliveryPreferences { get; set; } = default!;
+    public DeliveryPreferences DeliveryPreferences { get; set; } = default!;
 }
